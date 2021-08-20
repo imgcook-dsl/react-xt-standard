@@ -7,6 +7,9 @@ module.exports = function(schema, option) {
   // inline style
   const style = {};
 
+  // css styles
+  const cssStyles = [];
+
   // Global Public Functions
   const utils = [];
 
@@ -41,7 +44,9 @@ module.exports = function(schema, option) {
   };
 
   // convert to responsive unit, such as vw
-  const parseStyle = (style) => {
+  const parseStyle = (style, options) => {
+    let cssStyle = ``
+    const isCss = options && options.type === 'css'
     for (let key in style) {
       switch (key) {
         case 'fontSize':
@@ -69,9 +74,28 @@ module.exports = function(schema, option) {
           style[key] = (parseInt(style[key]) / _w).toFixed(2) + 'vw';
           break;
       }
+      if(isCss) {
+        const formatKey = (key) => {
+          const reg = /[A-Z]/
+          const formatKey = key
+            .split('')
+            .map((char, index, arr) => {
+              if(reg.test(char)) {
+                return `-${char.toLowerCase()}`       
+              }
+              return char
+            })
+          return formatKey.join('')
+        }
+        const cssKey = formatKey(key)
+        cssStyle += `${cssKey}:${style[key]};`
+      }
     }
-
-    return style;
+    if(isCss) {
+      return cssStyle
+    } else {
+      return style;
+    }
   }
 
   // parse function, return params and content
@@ -197,21 +221,37 @@ module.exports = function(schema, option) {
     })`;
   }
 
-  // generate render xml
+  // generate render xml 
   const generateRender = (schema) => {
     const type = schema.componentName.toLowerCase();
     const className = schema.props && schema.props.className;
-    const classString = className ? ` style={styles.${className}}` : '';
+
+    const formatClassName = (className) => {
+      const formatClassName = className
+        .split('')
+        .map((char, index, arr) => {
+          if(char === '-') {
+            arr[index+1] = arr[index+1].toUpperCase()
+            return undefined
+          }
+          return char
+        })
+      return formatClassName.join('')
+    }
+
+    const classString = className ? ` className={styles.${formatClassName(className)}}` : '';
 
     if (className) {
       style[className] = parseStyle(schema.props.style);
+      cssStyles.push(`${formatClassName(className)}{${parseStyle(schema.props.style, {type: 'css'})}}`)
+      console.log(cssStyles)
     }
 
     let xml;
     let props = '';
 
     Object.keys(schema.props).forEach((key) => {
-      if (['className', 'style', 'text', 'src'].indexOf(key) === -1) {
+      if (['className', 'style', 'text', 'src', 'lines'].indexOf(key) === -1) {
         props += ` ${key}={${parseProps(schema.props[key])}}`;
       }
     })
@@ -343,6 +383,11 @@ module.exports = function(schema, option) {
     singleQuote: true
   };
 
+  const cssPrettierOpt = {
+    parser: 'css',
+    printWidth: 120,
+  };
+
   return {
     panelDisplay: [
       {
@@ -358,6 +403,11 @@ module.exports = function(schema, option) {
           export default ${schema.componentName}_0;
         `, prettierOpt),
         panelType: 'js',
+      },
+      {
+        panelName: `style.responsive.css`,
+        panelValue: prettier.format(`${cssStyles.join('\n')}`, cssPrettierOpt),
+        panelType: 'css'
       },
       {
         panelName: `style.js`,
