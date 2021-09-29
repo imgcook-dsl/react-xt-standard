@@ -1,10 +1,12 @@
 module.exports = function(schema, option) {
+  let imgNumber = 0;
+
   const {prettier} = option;
 
   // imports
   const imports = [];
 
-  // inline style
+  // js styles
   const style = {};
 
   // css styles
@@ -44,7 +46,7 @@ module.exports = function(schema, option) {
   };
 
   // convert to responsive unit, such as vw
-  const parseStyle = (style, options) => {
+  const parseStyle = (style, options, parseStyleNum) => {
     let cssStyle = ``
     const isCss = options && options.type === 'css'
     for (let key in style) {
@@ -73,6 +75,14 @@ module.exports = function(schema, option) {
         case 'borderRadius':
           style[key] = (parseInt(style[key]) / _w).toFixed(2) + 'vw';
           break;
+        case 'backgroundImage':
+          if(parseStyleNum === 1) {
+            imgNumber++
+            const imageUrl = style[key].slice(4, -1)  
+            const name =`img${imgNumber}`
+            imports.push(`import ${name} from '${imageUrl}'`);
+          }
+          break;
       }
       if(isCss) {
         const formatKey = (key) => {
@@ -88,7 +98,9 @@ module.exports = function(schema, option) {
           return formatKey.join('')
         }
         const cssKey = formatKey(key)
-        cssStyle += `${cssKey}:${style[key]};`
+        if(cssKey !== 'background-image') {
+          cssStyle += `${cssKey}:${style[key]};`
+        }
       }
     }
     if(isCss) {
@@ -221,30 +233,29 @@ module.exports = function(schema, option) {
     })`;
   }
 
+  const formatClassName = (className) => {
+    const formatClassName = className
+      .split('')
+      .map((char, index, arr) => {
+        if(char === '-') {
+          arr[index+1] = arr[index+1].toUpperCase()
+          return undefined
+        }
+        return char
+      })
+    return formatClassName.join('')
+  }
+
   // generate render xml 
   const generateRender = (schema) => {
     const type = schema.componentName.toLowerCase();
     const className = schema.props && schema.props.className;
 
-    const formatClassName = (className) => {
-      const formatClassName = className
-        .split('')
-        .map((char, index, arr) => {
-          if(char === '-') {
-            arr[index+1] = arr[index+1].toUpperCase()
-            return undefined
-          }
-          return char
-        })
-      return formatClassName.join('')
-    }
-
     const classString = className ? ` className={styles.${formatClassName(className)}}` : '';
 
     if (className) {
-      style[className] = parseStyle(schema.props.style);
-      cssStyles.push(`${formatClassName(className)}{${parseStyle(schema.props.style, {type: 'css'})}}`)
-      console.log(cssStyles)
+      style[className] = parseStyle(schema.props.style, {}, 1);
+      cssStyles.push(`.${formatClassName(className)}{${parseStyle(schema.props.style, {type: 'css'}, 2)}}`)
     }
 
     let xml;
@@ -253,8 +264,15 @@ module.exports = function(schema, option) {
     Object.keys(schema.props).forEach((key) => {
       if (['className', 'style', 'text', 'src', 'lines'].indexOf(key) === -1) {
         props += ` ${key}={${parseProps(schema.props[key])}}`;
+      } 
+      if(key==='style' && type !== 'image') {
+        const inlineStyle = parseStyle(schema.props.style, {}, 3);
+        if(inlineStyle.backgroundImage) {
+          props += ` ${key}={{backgroundImage: img${imgNumber}}}`;
+        }
       }
     })
+
 
     switch(type) {
       case 'text':
@@ -262,12 +280,16 @@ module.exports = function(schema, option) {
         xml = `<span${classString}${props}>${innerText}</span>`;
         break;
       case 'image':
+        imgNumber++
         const source = parseProps(schema.props.src);
-        xml = `<img${classString}${props} src={${source}} />`;
+        const imageUrl = source.slice(1, -1)  
+        const name = `img${imgNumber}`
+        imports.push(`import ${name} from '${imageUrl}'`);
+        xml = `<img${classString}${props} src={${name}} />`;
         break;
       case 'div':
-      case 'page':
-      case 'block':
+      case 'page':  // 跟容器组件
+      case 'block': // 容器组件
         if (schema.children && schema.children.length) {
           xml = `<div${classString}${props}>${transform(schema.children)}</div>`;
         } else {
@@ -307,7 +329,9 @@ module.exports = function(schema, option) {
         const methods = [];
         const init = [];
         const render = [`render(){ return (`];
-        let classData = [`class ${schema.componentName}_${classes.length} extends Component {`];
+        const component = formatClassName(schema.props.className)
+
+        let classData = [`class ${component[0].toUpperCase()}${component.slice(1)} extends Component {`];
 
         if (schema.state) {
           states.push(`state = ${toString(schema.state)}`);
@@ -353,8 +377,14 @@ module.exports = function(schema, option) {
           });
         }
 
+        if(type === 'block') {
+          const component = formatClassName(schema.props.className)
+          result += `< ${component[0].toUpperCase()}${component.slice(1)} />`
+        }
+
+        // generate react element
         render.push(generateRender(schema))
-        render.push(`);}`);
+        render.push(`);}`)
 
         classData = classData.concat(states).concat(lifeCycles).concat(methods).concat(render);
         classData.push('}');
@@ -393,14 +423,12 @@ module.exports = function(schema, option) {
       {
         panelName: `index.jsx`,
         panelValue: prettier.format(`
-          'use strict';
-
-          import React, { Component } from 'react';
+          import React, { Component } from 'react'
           ${imports.join('\n')}
-          import styles from './style.js';
+          import styles from './style.js'
           ${utils.join('\n')}
           ${classes.join('\n')}
-          export default ${schema.componentName}_0;
+          export default ${schema.componentName};
         `, prettierOpt),
         panelType: 'js',
       },
