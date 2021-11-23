@@ -1,4 +1,5 @@
 module.exports = function(schema, option) {
+  let transformNumber = 0
   let imgNumber = 0;
 
   const {prettier} = option;
@@ -68,12 +69,17 @@ module.exports = function(schema, option) {
         case 'marginLeft':
         case 'marginRight':
         case 'lineHeight':
+          if(parseStyleNum === 1 && key === 'lineHeight') {
+            delete style[key]
+          }
         case 'borderBottomRightRadius':
         case 'borderBottomLeftRadius':
         case 'borderTopRightRadius':
-        case 'borderTopLeftRadius':
+        case 'borderTopLeftRadius':  
         case 'borderRadius':
-          style[key] = (parseInt(style[key]) / _w).toFixed(2) + 'vw';
+          if(parseStyleNum === 1) {
+            style[key] = (parseInt(style[key]) / _w).toFixed(2) + 'vw';
+          }
           break;
         case 'backgroundImage':
           if(parseStyleNum === 1) {
@@ -268,7 +274,7 @@ module.exports = function(schema, option) {
       if(key==='style' && type !== 'image') {
         const inlineStyle = parseStyle(schema.props.style, {}, 3);
         if(inlineStyle.backgroundImage) {
-          props += ` ${key}={{backgroundImage: img${imgNumber}}}`;
+          props += ` ${key}={{backgroundImage: \`url(\${img${imgNumber}})\`}}`;
         }
       }
     })
@@ -313,6 +319,7 @@ module.exports = function(schema, option) {
 
   // parse schema
   const transform = (schema) => {
+    transformNumber++
     let result = '';
 
     if (Array.isArray(schema)) {
@@ -328,7 +335,7 @@ module.exports = function(schema, option) {
         const lifeCycles = [];
         const methods = [];
         const init = [];
-        const render = [`render(){ return (`];
+        const render = [`return (`];
         const component = formatClassName(schema.props.className)
 
         let classData = [`class ${component[0].toUpperCase()}${component.slice(1)} extends Component {`];
@@ -377,6 +384,10 @@ module.exports = function(schema, option) {
           });
         }
 
+        if(transformNumber === 1) {
+          classData = [`const Index = () => {`];
+        }
+
         if(type === 'block') {
           const component = formatClassName(schema.props.className)
           result += `< ${component[0].toUpperCase()}${component.slice(1)} />`
@@ -384,7 +395,7 @@ module.exports = function(schema, option) {
 
         // generate react element
         render.push(generateRender(schema))
-        render.push(`);}`)
+        render.push(`)`)
 
         classData = classData.concat(states).concat(lifeCycles).concat(methods).concat(render);
         classData.push('}');
@@ -418,30 +429,47 @@ module.exports = function(schema, option) {
     printWidth: 120,
   };
 
+  const path =require('path')
+  const projectPath = 'resources/images/activities/halloween/pc'
+
+  const formatImports = (imports) => {
+    return imports.map((imp, index) => {
+      const regex = /\'.+\'/
+      const url = imp.match(regex)[0].slice(1,-1)
+      const arr = url.split('/')
+      const fileName = arr[arr.length-1]
+      return `import img${index+1} from '${path.join(projectPath, fileName)}'`
+    })
+  }
+
   return {
     panelDisplay: [
       {
         panelName: `index.jsx`,
+        panelResources: {
+          imports: imports,
+        },
         panelValue: prettier.format(`
           import React, { Component } from 'react'
-          ${imports.join('\n')}
-          import styles from './style.js'
+          ${formatImports(imports).join('\n')}
+          import styles from './style.responsive.css'
           ${utils.join('\n')}
           ${classes.join('\n')}
-          export default ${schema.componentName};
+          export default Index;
         `, prettierOpt),
         panelType: 'js',
       },
       {
+        panelResources: {},
         panelName: `style.responsive.css`,
         panelValue: prettier.format(`${cssStyles.join('\n')}`, cssPrettierOpt),
         panelType: 'css'
       },
-      {
-        panelName: `style.js`,
-        panelValue: prettier.format(`export default ${toString(style)}`, prettierOpt),
-        panelType: 'js'
-      }
+      // {
+      //   panelName: `style.js`,
+      //   panelValue: prettier.format(`export default ${toString(style)}`, prettierOpt),
+      //   panelType: 'js'
+      // }
     ],
     noTemplate: true
   };
