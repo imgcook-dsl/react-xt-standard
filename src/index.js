@@ -89,6 +89,14 @@ module.exports = function(schema, option) {
             imports.push(`import ${name} from '${imageUrl}'`);
           }
           break;
+        case 'backgroundImage':
+          if(parseStyleNum === 1) {
+            imgNumber++
+            const imageUrl = style[key].slice(4, -1)  
+            const name =`img${imgNumber}`
+            imports.push(`import ${name} from '${imageUrl}'`);
+          }
+          break;
       }
       if(isCss) {
         const formatKey = (key) => {
@@ -274,7 +282,11 @@ module.exports = function(schema, option) {
       if(key==='style' && type !== 'image') {
         const inlineStyle = parseStyle(schema.props.style, {}, 3);
         if(inlineStyle.backgroundImage) {
+<<<<<<< HEAD
           props += ` ${key}={{backgroundImage: \`url(\${img${imgNumber}})\`}}`;
+=======
+          props += ` ${key}={{backgroundImage: img${imgNumber}}}`;
+>>>>>>> c18aada8be5054535a39e9609de117977b7c7cd3
         }
       }
     })
@@ -335,7 +347,11 @@ module.exports = function(schema, option) {
         const lifeCycles = [];
         const methods = [];
         const init = [];
+<<<<<<< HEAD
         const render = [`return (`];
+=======
+        const render = [`render(){ return (`];
+>>>>>>> c18aada8be5054535a39e9609de117977b7c7cd3
         const component = formatClassName(schema.props.className)
 
         let classData = [`class ${component[0].toUpperCase()}${component.slice(1)} extends Component {`];
@@ -384,10 +400,13 @@ module.exports = function(schema, option) {
           });
         }
 
+<<<<<<< HEAD
         if(transformNumber === 1) {
           classData = [`const Index = () => {`];
         }
 
+=======
+>>>>>>> c18aada8be5054535a39e9609de117977b7c7cd3
         if(type === 'block') {
           const component = formatClassName(schema.props.className)
           result += `< ${component[0].toUpperCase()}${component.slice(1)} />`
@@ -395,7 +414,11 @@ module.exports = function(schema, option) {
 
         // generate react element
         render.push(generateRender(schema))
+<<<<<<< HEAD
         render.push(`)`)
+=======
+        render.push(`);}`)
+>>>>>>> c18aada8be5054535a39e9609de117977b7c7cd3
 
         classData = classData.concat(states).concat(lifeCycles).concat(methods).concat(render);
         classData.push('}');
@@ -451,11 +474,19 @@ module.exports = function(schema, option) {
         },
         panelValue: prettier.format(`
           import React, { Component } from 'react'
+<<<<<<< HEAD
           ${formatImports(imports).join('\n')}
           import styles from './style.responsive.css'
           ${utils.join('\n')}
           ${classes.join('\n')}
           export default Index;
+=======
+          ${imports.join('\n')}
+          import styles from './style.js'
+          ${utils.join('\n')}
+          ${classes.join('\n')}
+          export default ${schema.componentName};
+>>>>>>> c18aada8be5054535a39e9609de117977b7c7cd3
         `, prettierOpt),
         panelType: 'js',
       },
