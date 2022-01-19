@@ -2,7 +2,7 @@
 // const pcTemplate = require('../templates/page.index.template')
 const fs = require('fs');
 const path = require('path');
-const parse = require('../src/index');
+const parse = require('../src/old_index.js');
 const data = require('../test/data');
 const download = require('../download')
 const config = require('../config')

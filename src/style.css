@@ -1,0 +1,260 @@
+.mod {
+  width: 1vw;
+  height: 1.8776vw;
+}
+.containerInner {
+  display: flex;
+  position: relative;
+  alignitems: center;
+  flexdirection: row;
+  backgroundcolor: #ffffff;
+  width: 1vw;
+  height: 1.8776vw;
+}
+.banner {
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 1vw;
+  height: 0.52187vw;
+}
+.floorBgWrapper {
+  display: flex;
+  position: absolute;
+  bottom: 0vw;
+  left: 0vw;
+  alignitems: flex-start;
+  flexdirection: row;
+  justifycontent: center;
+  backgroundsize: contain;
+  width: 1vw;
+  height: 0.20156vw;
+}
+.floorBg {
+  margintop: 0.04219vw;
+  width: 0.45677vw;
+  height: 0.10885vw;
+}
+.wrapper {
+  display: flex;
+  position: absolute;
+  bottom: 0.0901vw;
+  left: 0vw;
+  alignitems: center;
+  flexdirection: column;
+  backgroundsize: contain;
+  width: 1vw;
+  height: 1.44115vw;
+}
+.wrapperInner {
+  display: flex;
+  position: relative;
+  alignitems: flex-start;
+  flexdirection: row;
+  justifycontent: center;
+  margintop: 0.02604vw;
+}
+.cover {
+  position: relative;
+  width: 0.69635vw;
+  height: 0.61667vw;
+}
+.group {
+  display: flex;
+  position: absolute;
+  top: 0.33698vw;
+  right: 0.06302vw;
+  alignitems: center;
+  flexdirection: column;
+  backgroundsize: contain;
+  width: 0.56771vw;
+  height: 0.20469vw;
+}
+.longBg {
+  position: relative;
+  margintop: 0.01667vw;
+  width: 0.54375vw;
+  height: 0.08073vw;
+}
+.bg {
+  position: relative;
+  margintop: 0.01458vw;
+  width: 0.09427vw;
+  height: 0.01146vw;
+}
+.background {
+  position: relative;
+  margintop: 0.01042vw;
+  width: 0.25781vw;
+  height: 0.0349vw;
+}
+.bg1 {
+  position: relative;
+  margintop: 0.0099vw;
+  width: 0.11146vw;
+  height: 0.01406vw;
+}
+.wrapperInner1 {
+  display: flex;
+  position: relative;
+  alignitems: center;
+  flexdirection: column;
+  margintop: 0.00729vw;
+  backgroundsize: contain;
+  width: 0.69635vw;
+  height: 0.46042vw;
+}
+.group1 {
+  display: flex;
+  position: relative;
+  alignitems: flex-start;
+  flexdirection: row;
+  margintop: 0.06198vw;
+  backgroundsize: contain;
+  width: 0.59323vw;
+  height: 0.19115vw;
+}
+.view {
+  display: flex;
+  alignitems: flex-start;
+  flexdirection: column;
+  margintop: 0.0151vw;
+  marginright: 0.06354vw;
+  marginleft: 0.02187vw;
+}
+.actionBg {
+  position: relative;
+  marginleft: 0.00052vw;
+  width: 0.23125vw;
+  height: 0.075vw;
+}
+.buttonBg {
+  position: relative;
+  margintop: 0.00729vw;
+  width: 0.23125vw;
+  height: 0.075vw;
+}
+.view1 {
+  display: flex;
+  alignitems: flex-start;
+  flexdirection: column;
+  margintop: 0.04844vw;
+  width: 0.23125vw;
+}
+.background1 {
+  position: relative;
+  marginleft: 0.08177vw;
+  width: 0.08542vw;
+  height: 0.01094vw;
+}
+.actionBg1 {
+  position: relative;
+  alignself: center;
+  margintop: 0.01771vw;
+  width: 0.19323vw;
+  height: 0.0349vw;
+}
+.bg2 {
+  position: relative;
+  margintop: 0.01302vw;
+  width: 0.23125vw;
+  height: 0.02656vw;
+}
+.item {
+  position: relative;
+  margintop: 0.01667vw;
+  width: 0.1026vw;
+  height: 0.1026vw;
+}
+.buttonBg1 {
+  position: relative;
+  margintop: 0.01563vw;
+  width: 0.08802vw;
+  height: 0.01927vw;
+}
+.banner1 {
+  position: relative;
+  margintop: 0.0125vw;
+  width: 0.45937vw;
+  height: 0.15052vw;
+}
+.bar {
+  position: absolute;
+  top: 0.70052vw;
+  left: 0.20417vw;
+  width: 0.59115vw;
+  height: 0.02604vw;
+}
+.actionBg2 {
+  position: absolute;
+  top: 0.63281vw;
+  right: 0.38646vw;
+  width: 0.22448vw;
+  height: 0.04375vw;
+}
+.layerWrapper {
+  display: flex;
+  position: absolute;
+  top: 0.43177vw;
+  right: 0.21146vw;
+  alignitems: center;
+  flexdirection: row;
+  width: 0.57656vw;
+  height: 0.17135vw;
+}
+.layer {
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 0.57656vw;
+  height: 0.17135vw;
+}
+.background2 {
+  position: absolute;
+  top: 0.09896vw;
+  right: 0.04531vw;
+  width: 0.19271vw;
+  height: 0.01563vw;
+}
+.bg3 {
+  position: absolute;
+  top: 0.08177vw;
+  right: 0.07187vw;
+  width: 0.1401vw;
+  height: 0.0099vw;
+}
+.background3 {
+  position: absolute;
+  top: 0.05469vw;
+  right: 0.09323vw;
+  width: 0.08438vw;
+  height: 0.01146vw;
+}
+.product {
+  position: absolute;
+  bottom: 0.01615vw;
+  left: 0.16823vw;
+  width: 0.14792vw;
+  height: 0.13229vw;
+}
+.iconAdd {
+  position: absolute;
+  top: 0.08021vw;
+  left: 0.15677vw;
+  width: 0.01094vw;
+  height: 0.01146vw;
+}
+.item1 {
+  position: absolute;
+  bottom: 0.01615vw;
+  left: 0.00833vw;
+  width: 0.14792vw;
+  height: 0.13229vw;
+}
+.cover1 {
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 1vw;
+  height: 0.76146vw;
+}

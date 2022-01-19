@@ -1,0 +1,1782 @@
+{
+    "artboardImg": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/300cda8021c711ec8e7d0dac20d72755.png",
+    "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 3605
+    },
+    "pluginVersion": "1.1.3",
+    "componentName": "Block",
+    "name": "万圣节大游行pc",
+    "reference": "psd",
+    "restore_id": "ddbbfaf8-b36d-4010-b32f-f4256e77748d",
+    "props": {
+        "style": {
+            "width": "1.00000vw",
+            "height": "1.87760vw"
+        },
+        "className": "mod",
+        "src": "img0"
+    },
+    "id": "468bac50-21c7-11ec-8cd6-b3025f969e9d",
+    "children": [
+        {
+            "componentName": "Div",
+            "id": "468cbdc8-21c7-11ec-8cd6-b3025f969e9d",
+            "props": {
+                "style": {
+                    "display": "flex",
+                    "position": "relative",
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "backgroundColor": "#ffffff",
+                    "width": "1.00000vw",
+                    "height": "1.87760vw"
+                },
+                "className": "containerInner"
+            },
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 1920,
+                "height": 3605
+            },
+            "selfId": "layerId-70",
+            "children": [
+                {
+                    "componentName": "Image",
+                    "id": "468cbdc7-21c7-11ec-8cd6-b3025f969e9d",
+                    "props": {
+                        "style": {
+                            "position": "absolute",
+                            "top": "0.00000vw",
+                            "left": "0.00000vw",
+                            "width": "1.00000vw",
+                            "height": "0.52187vw"
+                        },
+                        "src": "img1",
+                        "className": "banner"
+                    },
+                    "rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1920,
+                        "height": 1002
+                    },
+                    "classNames": [
+                        {
+                            "name": "万圣节大游行pc",
+                            "id": "3231_70"
+                        }
+                    ],
+                    "selfId": "layerId-2"
+                },
+                {
+                    "componentName": "Div",
+                    "id": "5a9f3f9a-5248-4bf5-9373-7230b3327c42",
+                    "props": {
+                        "style": {
+                            "display": "flex",
+                            "position": "absolute",
+                            "bottom": "0.00000vw",
+                            "left": "0.00000vw",
+                            "alignItems": "flex-start",
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "backgroundSize": "contain",
+                            "backgroundImage": "`url(${img2})`",
+                            "width": "1.00000vw",
+                            "height": "0.20156vw"
+                        },
+                        "className": "floorBgWrapper"
+                    },
+                    "rect": {
+                        "x": 0,
+                        "y": 3218,
+                        "width": 1920,
+                        "height": 387
+                    },
+                    "children": [
+                        {
+                            "componentName": "Image",
+                            "id": "468cbdc5-21c7-11ec-8cd6-b3025f969e9d",
+                            "props": {
+                                "style": {
+                                    "marginTop": "0.04219vw",
+                                    "width": "0.45677vw",
+                                    "height": "0.10885vw"
+                                },
+                                "src": "img3",
+                                "className": "floorBg"
+                            },
+                            "rect": {
+                                "x": 520,
+                                "y": 3299,
+                                "width": 877,
+                                "height": 209
+                            },
+                            "classNames": [
+                                {
+                                    "name": "万圣节大游行pc",
+                                    "id": "3231_70"
+                                },
+                                {
+                                    "name": "footer",
+                                    "id": "3231_6"
+                                }
+                            ],
+                            "selfId": "layerId-5"
+                        }
+                    ]
+                },
+                {
+                    "componentName": "Div",
+                    "id": "ac8a5cfc-f61c-419e-af42-535ff88690fb",
+                    "props": {
+                        "style": {
+                            "display": "flex",
+                            "position": "absolute",
+                            "bottom": "0.09010vw",
+                            "left": "0.00000vw",
+                            "alignItems": "center",
+                            "flexDirection": "column",
+                            "backgroundSize": "contain",
+                            "backgroundImage": "`url(${img4})`",
+                            "width": "1.00000vw",
+                            "height": "1.44115vw"
+                        },
+                        "className": "wrapper"
+                    },
+                    "rect": {
+                        "x": 0,
+                        "y": 665,
+                        "width": 1920,
+                        "height": 2767
+                    },
+                    "children": [
+                        {
+                            "componentName": "Div",
+                            "id": "fdec79dd-10a2-4831-b9e4-cc5305a2a5ca",
+                            "props": {
+                                "style": {
+                                    "display": "flex",
+                                    "position": "relative",
+                                    "alignItems": "flex-start",
+                                    "flexDirection": "row",
+                                    "justifyContent": "center",
+                                    "marginTop": "0.02604vw"
+                                },
+                                "className": "wrapperInner"
+                            },
+                            "rect": {
+                                "x": 290,
+                                "y": 715,
+                                "width": 1337,
+                                "height": 1184
+                            },
+                            "children": [
+                                {
+                                    "componentName": "Image",
+                                    "id": "468c96b3-21c7-11ec-8cd6-b3025f969e9d",
+                                    "props": {
+                                        "style": {
+                                            "position": "relative",
+                                            "width": "0.69635vw",
+                                            "height": "0.61667vw"
+                                        },
+                                        "src": "img5",
+                                        "className": "cover"
+                                    },
+                                    "rect": {
+                                        "x": 290,
+                                        "y": 715,
+                                        "width": 1337,
+                                        "height": 1184
+                                    },
+                                    "classNames": [
+                                        {
+                                            "name": "万圣节大游行pc",
+                                            "id": "3231_70"
+                                        },
+                                        {
+                                            "name": "body",
+                                            "id": "3231_59"
+                                        },
+                                        {
+                                            "name": "part1",
+                                            "id": "3231_53"
+                                        }
+                                    ],
+                                    "selfId": "layerId-28"
+                                },
+                                {
+                                    "componentName": "Div",
+                                    "id": "29ad7b2d-6f23-4b1f-8b73-290214992c4d",
+                                    "props": {
+                                        "style": {
+                                            "display": "flex",
+                                            "position": "absolute",
+                                            "top": "0.33698vw",
+                                            "right": "0.06302vw",
+                                            "alignItems": "center",
+                                            "flexDirection": "column",
+                                            "backgroundSize": "contain",
+                                            "backgroundImage": "`url(${img6})`",
+                                            "width": "0.56771vw",
+                                            "height": "0.20469vw"
+                                        },
+                                        "className": "group"
+                                    },
+                                    "rect": {
+                                        "x": 416,
+                                        "y": 1362,
+                                        "width": 1090,
+                                        "height": 393
+                                    },
+                                    "children": [
+                                        {
+                                            "componentName": "Image",
+                                            "id": "468c6fa5-21c7-11ec-8cd6-b3025f969e9d",
+                                            "props": {
+                                                "style": {
+                                                    "position": "relative",
+                                                    "marginTop": "0.01667vw",
+                                                    "width": "0.54375vw",
+                                                    "height": "0.08073vw"
+                                                },
+                                                "src": "img7",
+                                                "className": "longBg"
+                                            },
+                                            "rect": {
+                                                "x": 438,
+                                                "y": 1394,
+                                                "width": 1044,
+                                                "height": 155
+                                            },
+                                            "classNames": [
+                                                {
+                                                    "name": "万圣节大游行pc",
+                                                    "id": "3231_70"
+                                                },
+                                                {
+                                                    "name": "body",
+                                                    "id": "3231_59"
+                                                },
+                                                {
+                                                    "name": "part1",
+                                                    "id": "3231_53"
+                                                },
+                                                {
+                                                    "name": "新买家优惠",
+                                                    "id": "3231_38"
+                                                }
+                                            ],
+                                            "selfId": "layerId-37"
+                                        },
+                                        {
+                                            "componentName": "Image",
+                                            "id": "468c6fa6-21c7-11ec-8cd6-b3025f969e9d",
+                                            "props": {
+                                                "style": {
+                                                    "position": "relative",
+                                                    "marginTop": "0.01458vw",
+                                                    "width": "0.09427vw",
+                                                    "height": "0.01146vw"
+                                                },
+                                                "src": "img8",
+                                                "className": "bg"
+                                            },
+                                            "rect": {
+                                                "x": 866,
+                                                "y": 1577,
+                                                "width": 181,
+                                                "height": 22
+                                            },
+                                            "classNames": [
+                                                {
+                                                    "name": "万圣节大游行pc",
+                                                    "id": "3231_70"
+                                                },
+                                                {
+                                                    "name": "body",
+                                                    "id": "3231_59"
+                                                },
+                                                {
+                                                    "name": "part1",
+                                                    "id": "3231_53"
+                                                },
+                                                {
+                                                    "name": "新买家优惠",
+                                                    "id": "3231_38"
+                                                },
+                                                {
+                                                    "name": "文案",
+                                                    "id": "3231_36"
+                                                }
+                                            ],
+                                            "selfId": "layerId-35"
+                                        },
+                                        {
+                                            "componentName": "Image",
+                                            "id": "468c6fa7-21c7-11ec-8cd6-b3025f969e9d",
+                                            "props": {
+                                                "style": {
+                                                    "position": "relative",
+                                                    "marginTop": "0.01042vw",
+                                                    "width": "0.25781vw",
+                                                    "height": "0.03490vw"
+                                                },
+                                                "src": "img9",
+                                                "className": "background"
+                                            },
+                                            "rect": {
+                                                "x": 713,
+                                                "y": 1619,
+                                                "width": 495,
+                                                "height": 67
+                                            },
+                                            "classNames": [
+                                                {
+                                                    "name": "万圣节大游行pc",
+                                                    "id": "3231_70"
+                                                },
+                                                {
+                                                    "name": "body",
+                                                    "id": "3231_59"
+                                                },
+                                                {
+                                                    "name": "part1",
+                                                    "id": "3231_53"
+                                                },
+                                                {
+                                                    "name": "新买家优惠",
+                                                    "id": "3231_38"
+                                                },
+                                                {
+                                                    "name": "文案",
+                                                    "id": "3231_36"
+                                                }
+                                            ],
+                                            "selfId": "layerId-34"
+                                        },
+                                        {
+                                            "componentName": "Image",
+                                            "id": "468c96b0-21c7-11ec-8cd6-b3025f969e9d",
+                                            "props": {
+                                                "style": {
+                                                    "position": "relative",
+                                                    "marginTop": "0.00990vw",
+                                                    "width": "0.11146vw",
+                                                    "height": "0.01406vw"
+                                                },
+                                                "src": "img10",
+                                                "className": "bg1"
+                                            },
+                                            "rect": {
+                                                "x": 855,
+                                                "y": 1705,
+                                                "width": 214,
+                                                "height": 27
+                                            },
+                                            "classNames": [
+                                                {
+                                                    "name": "万圣节大游行pc",
+                                                    "id": "3231_70"
+                                                },
+                                                {
+                                                    "name": "body",
+                                                    "id": "3231_59"
+                                                },
+                                                {
+                                                    "name": "part1",
+                                                    "id": "3231_53"
+                                                },
+                                                {
+                                                    "name": "新买家优惠",
+                                                    "id": "3231_38"
+                                                },
+                                                {
+                                                    "name": "文案",
+                                                    "id": "3231_36"
+                                                }
+                                            ],
+                                            "selfId": "layerId-33"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "smart": {
+                                "layerProtocol": {
+                                    "layout": {
+                                        "type": "layout",
+                                        "position": "top"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "componentName": "Div",
+                            "id": "04f55db4-8f87-4b2c-b5e1-fc7bd4b40b42",
+                            "props": {
+                                "style": {
+                                    "display": "flex",
+                                    "position": "relative",
+                                    "alignItems": "center",
+                                    "flexDirection": "column",
+                                    "marginTop": "0.00729vw",
+                                    "backgroundSize": "contain",
+                                    "backgroundImage": "`url(${img11})`",
+                                    "width": "0.69635vw",
+                                    "height": "0.46042vw"
+                                },
+                                "className": "wrapperInner1"
+                            },
+                            "rect": {
+                                "x": 288,
+                                "y": 1913,
+                                "width": 1337,
+                                "height": 884
+                            },
+                            "children": [
+                                {
+                                    "componentName": "Div",
+                                    "id": "a8778606-2886-4068-9346-11b2c992b585",
+                                    "props": {
+                                        "style": {
+                                            "display": "flex",
+                                            "position": "relative",
+                                            "alignItems": "flex-start",
+                                            "flexDirection": "row",
+                                            "marginTop": "0.06198vw",
+                                            "backgroundSize": "contain",
+                                            "backgroundImage": "`url(${img12})`",
+                                            "width": "0.59323vw",
+                                            "height": "0.19115vw"
+                                        },
+                                        "className": "group1"
+                                    },
+                                    "rect": {
+                                        "x": 388,
+                                        "y": 2032,
+                                        "width": 1139,
+                                        "height": 367
+                                    },
+                                    "children": [
+                                        {
+                                            "componentName": "Div",
+                                            "id": "b4e0d96f-dd42-42bc-99e3-b2f281a6dc0d",
+                                            "props": {
+                                                "style": {
+                                                    "display": "flex",
+                                                    "alignItems": "flex-start",
+                                                    "flexDirection": "column",
+                                                    "marginTop": "0.01510vw",
+                                                    "marginRight": "0.06354vw",
+                                                    "marginLeft": "0.02187vw"
+                                                },
+                                                "className": "view"
+                                            },
+                                            "rect": {
+                                                "x": 430,
+                                                "y": 2061,
+                                                "width": 445,
+                                                "height": 302
+                                            },
+                                            "children": [
+                                                {
+                                                    "componentName": "Image",
+                                                    "id": "468c96b4-21c7-11ec-8cd6-b3025f969e9d",
+                                                    "props": {
+                                                        "style": {
+                                                            "position": "relative",
+                                                            "marginLeft": "0.00052vw",
+                                                            "width": "0.23125vw",
+                                                            "height": "0.07500vw"
+                                                        },
+                                                        "src": "img13",
+                                                        "className": "actionBg"
+                                                    },
+                                                    "rect": {
+                                                        "x": 431,
+                                                        "y": 2061,
+                                                        "width": 444,
+                                                        "height": 144
+                                                    },
+                                                    "classNames": [
+                                                        {
+                                                            "name": "万圣节大游行pc",
+                                                            "id": "3231_70"
+                                                        },
+                                                        {
+                                                            "name": "body",
+                                                            "id": "3231_59"
+                                                        },
+                                                        {
+                                                            "name": "part2",
+                                                            "id": "3231_26"
+                                                        },
+                                                        {
+                                                            "name": "module1",
+                                                            "id": "3231_25"
+                                                        }
+                                                    ],
+                                                    "selfId": "layerId-24",
+                                                    "smart": {
+                                                        "layerProtocol": {
+                                                            "layout": {
+                                                                "type": "layout",
+                                                                "position": "top"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "componentName": "Image",
+                                                    "id": "468c96b5-21c7-11ec-8cd6-b3025f969e9d",
+                                                    "props": {
+                                                        "style": {
+                                                            "position": "relative",
+                                                            "marginTop": "0.00729vw",
+                                                            "width": "0.23125vw",
+                                                            "height": "0.07500vw"
+                                                        },
+                                                        "src": "img14",
+                                                        "className": "buttonBg"
+                                                    },
+                                                    "rect": {
+                                                        "x": 430,
+                                                        "y": 2219,
+                                                        "width": 444,
+                                                        "height": 144
+                                                    },
+                                                    "classNames": [
+                                                        {
+                                                            "name": "万圣节大游行pc",
+                                                            "id": "3231_70"
+                                                        },
+                                                        {
+                                                            "name": "body",
+                                                            "id": "3231_59"
+                                                        },
+                                                        {
+                                                            "name": "part2",
+                                                            "id": "3231_26"
+                                                        },
+                                                        {
+                                                            "name": "module1",
+                                                            "id": "3231_25"
+                                                        }
+                                                    ],
+                                                    "selfId": "layerId-23",
+                                                    "smart": {
+                                                        "layerProtocol": {
+                                                            "layout": {
+                                                                "type": "layout",
+                                                                "position": "bottom"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "smart": {
+                                                "layerProtocol": {
+                                                    "layout": {
+                                                        "type": "layout",
+                                                        "position": "left"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "componentName": "Div",
+                                            "id": "a0c59f92-a18b-4b98-b7bb-aaed1b24fa4f",
+                                            "props": {
+                                                "style": {
+                                                    "display": "flex",
+                                                    "alignItems": "flex-start",
+                                                    "flexDirection": "column",
+                                                    "marginTop": "0.04844vw",
+                                                    "width": "0.23125vw"
+                                                },
+                                                "className": "view1"
+                                            },
+                                            "rect": {
+                                                "x": 997,
+                                                "y": 2125,
+                                                "width": 444,
+                                                "height": 198
+                                            },
+                                            "children": [
+                                                {
+                                                    "componentName": "Image",
+                                                    "id": "468c96b6-21c7-11ec-8cd6-b3025f969e9d",
+                                                    "props": {
+                                                        "style": {
+                                                            "position": "relative",
+                                                            "marginLeft": "0.08177vw",
+                                                            "width": "0.08542vw",
+                                                            "height": "0.01094vw"
+                                                        },
+                                                        "src": "img15",
+                                                        "className": "background1"
+                                                    },
+                                                    "rect": {
+                                                        "x": 1154,
+                                                        "y": 2125,
+                                                        "width": 164,
+                                                        "height": 21
+                                                    },
+                                                    "classNames": [
+                                                        {
+                                                            "name": "万圣节大游行pc",
+                                                            "id": "3231_70"
+                                                        },
+                                                        {
+                                                            "name": "body",
+                                                            "id": "3231_59"
+                                                        },
+                                                        {
+                                                            "name": "part2",
+                                                            "id": "3231_26"
+                                                        },
+                                                        {
+                                                            "name": "module1",
+                                                            "id": "3231_25"
+                                                        },
+                                                        {
+                                                            "name": "文案",
+                                                            "id": "3231_22"
+                                                        }
+                                                    ],
+                                                    "selfId": "layerId-21",
+                                                    "smart": {
+                                                        "layerProtocol": {
+                                                            "layout": {
+                                                                "type": "layout",
+                                                                "position": "top"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "componentName": "Image",
+                                                    "id": "468c96b7-21c7-11ec-8cd6-b3025f969e9d",
+                                                    "props": {
+                                                        "style": {
+                                                            "position": "relative",
+                                                            "alignSelf": "center",
+                                                            "marginTop": "0.01771vw",
+                                                            "width": "0.19323vw",
+                                                            "height": "0.03490vw"
+                                                        },
+                                                        "src": "img16",
+                                                        "className": "actionBg1"
+                                                    },
+                                                    "rect": {
+                                                        "x": 1033,
+                                                        "y": 2180,
+                                                        "width": 371,
+                                                        "height": 67
+                                                    },
+                                                    "classNames": [
+                                                        {
+                                                            "name": "万圣节大游行pc",
+                                                            "id": "3231_70"
+                                                        },
+                                                        {
+                                                            "name": "body",
+                                                            "id": "3231_59"
+                                                        },
+                                                        {
+                                                            "name": "part2",
+                                                            "id": "3231_26"
+                                                        },
+                                                        {
+                                                            "name": "module1",
+                                                            "id": "3231_25"
+                                                        },
+                                                        {
+                                                            "name": "文案",
+                                                            "id": "3231_22"
+                                                        }
+                                                    ],
+                                                    "selfId": "layerId-20",
+                                                    "smart": {
+                                                        "layerProtocol": {
+                                                            "layout": {
+                                                                "type": "layout",
+                                                                "position": "middle"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "componentName": "Image",
+                                                    "id": "468c96b8-21c7-11ec-8cd6-b3025f969e9d",
+                                                    "props": {
+                                                        "style": {
+                                                            "position": "relative",
+                                                            "marginTop": "0.01302vw",
+                                                            "width": "0.23125vw",
+                                                            "height": "0.02656vw"
+                                                        },
+                                                        "src": "img17",
+                                                        "className": "bg2"
+                                                    },
+                                                    "rect": {
+                                                        "x": 997,
+                                                        "y": 2272,
+                                                        "width": 444,
+                                                        "height": 51
+                                                    },
+                                                    "classNames": [
+                                                        {
+                                                            "name": "万圣节大游行pc",
+                                                            "id": "3231_70"
+                                                        },
+                                                        {
+                                                            "name": "body",
+                                                            "id": "3231_59"
+                                                        },
+                                                        {
+                                                            "name": "part2",
+                                                            "id": "3231_26"
+                                                        },
+                                                        {
+                                                            "name": "module1",
+                                                            "id": "3231_25"
+                                                        },
+                                                        {
+                                                            "name": "文案",
+                                                            "id": "3231_22"
+                                                        }
+                                                    ],
+                                                    "selfId": "layerId-19",
+                                                    "smart": {
+                                                        "layerProtocol": {
+                                                            "layout": {
+                                                                "type": "layout",
+                                                                "position": "bottom"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "smart": {
+                                                "layerProtocol": {
+                                                    "layout": {
+                                                        "type": "layout",
+                                                        "position": "right"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "smart": {
+                                        "layerProtocol": {
+                                            "layout": {
+                                                "type": "layout",
+                                                "position": "top"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "componentName": "Image",
+                                    "id": "468cbdc0-21c7-11ec-8cd6-b3025f969e9d",
+                                    "props": {
+                                        "style": {
+                                            "position": "relative",
+                                            "marginTop": "0.01667vw",
+                                            "width": "0.10260vw",
+                                            "height": "0.10260vw"
+                                        },
+                                        "src": "img18",
+                                        "className": "item"
+                                    },
+                                    "rect": {
+                                        "x": 859,
+                                        "y": 2431,
+                                        "width": 197,
+                                        "height": 197
+                                    },
+                                    "classNames": [
+                                        {
+                                            "name": "万圣节大游行pc",
+                                            "id": "3231_70"
+                                        },
+                                        {
+                                            "name": "body",
+                                            "id": "3231_59"
+                                        },
+                                        {
+                                            "name": "part2",
+                                            "id": "3231_26"
+                                        },
+                                        {
+                                            "name": "module2",
+                                            "id": "3231_15"
+                                        }
+                                    ],
+                                    "selfId": "layerId-14",
+                                    "smart": {
+                                        "layerProtocol": {
+                                            "layout": {
+                                                "type": "layout",
+                                                "position": "middle"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "componentName": "Image",
+                                    "id": "468cbdc1-21c7-11ec-8cd6-b3025f969e9d",
+                                    "props": {
+                                        "style": {
+                                            "position": "relative",
+                                            "marginTop": "0.01563vw",
+                                            "width": "0.08802vw",
+                                            "height": "0.01927vw"
+                                        },
+                                        "src": "img19",
+                                        "className": "buttonBg1"
+                                    },
+                                    "rect": {
+                                        "x": 872,
+                                        "y": 2658,
+                                        "width": 169,
+                                        "height": 37
+                                    },
+                                    "classNames": [
+                                        {
+                                            "name": "万圣节大游行pc",
+                                            "id": "3231_70"
+                                        },
+                                        {
+                                            "name": "body",
+                                            "id": "3231_59"
+                                        },
+                                        {
+                                            "name": "part2",
+                                            "id": "3231_26"
+                                        },
+                                        {
+                                            "name": "module2",
+                                            "id": "3231_15"
+                                        }
+                                    ],
+                                    "selfId": "layerId-13",
+                                    "smart": {
+                                        "layerProtocol": {
+                                            "layout": {
+                                                "type": "layout",
+                                                "position": "bottom"
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "smart": {
+                                "layerProtocol": {
+                                    "layout": {
+                                        "type": "layout",
+                                        "position": "middle"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "componentName": "Image",
+                            "id": "468cbdc3-21c7-11ec-8cd6-b3025f969e9d",
+                            "props": {
+                                "style": {
+                                    "position": "relative",
+                                    "marginTop": "0.01250vw",
+                                    "width": "0.45937vw",
+                                    "height": "0.15052vw"
+                                },
+                                "src": "img20",
+                                "className": "banner1"
+                            },
+                            "rect": {
+                                "x": 519,
+                                "y": 2821,
+                                "width": 882,
+                                "height": 289
+                            },
+                            "classNames": [
+                                {
+                                    "name": "万圣节大游行pc",
+                                    "id": "3231_70"
+                                },
+                                {
+                                    "name": "body",
+                                    "id": "3231_59"
+                                }
+                            ],
+                            "selfId": "layerId-9",
+                            "smart": {
+                                "layerProtocol": {
+                                    "layout": {
+                                        "type": "layout",
+                                        "position": "bottom"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "componentName": "Image",
+                    "id": "468c96b2-21c7-11ec-8cd6-b3025f969e9d",
+                    "props": {
+                        "style": {
+                            "position": "absolute",
+                            "top": "0.70052vw",
+                            "left": "0.20417vw",
+                            "width": "0.59115vw",
+                            "height": "0.02604vw"
+                        },
+                        "src": "img21",
+                        "className": "bar"
+                    },
+                    "rect": {
+                        "x": 392,
+                        "y": 1345,
+                        "width": 1135,
+                        "height": 50
+                    },
+                    "classNames": [
+                        {
+                            "name": "万圣节大游行pc",
+                            "id": "3231_70"
+                        },
+                        {
+                            "name": "body",
+                            "id": "3231_59"
+                        },
+                        {
+                            "name": "part1",
+                            "id": "3231_53"
+                        },
+                        {
+                            "name": "新买家优惠",
+                            "id": "3231_38"
+                        }
+                    ],
+                    "selfId": "layerId-30"
+                },
+                {
+                    "componentName": "Image",
+                    "id": "468c6fa4-21c7-11ec-8cd6-b3025f969e9d",
+                    "props": {
+                        "style": {
+                            "position": "absolute",
+                            "top": "0.63281vw",
+                            "right": "0.38646vw",
+                            "width": "0.22448vw",
+                            "height": "0.04375vw"
+                        },
+                        "src": "img22",
+                        "className": "actionBg2"
+                    },
+                    "rect": {
+                        "x": 747,
+                        "y": 1215,
+                        "width": 431,
+                        "height": 84
+                    },
+                    "classNames": [
+                        {
+                            "name": "万圣节大游行pc",
+                            "id": "3231_70"
+                        },
+                        {
+                            "name": "body",
+                            "id": "3231_59"
+                        },
+                        {
+                            "name": "part1",
+                            "id": "3231_53"
+                        }
+                    ],
+                    "selfId": "layerId-39"
+                },
+                {
+                    "componentName": "Div",
+                    "id": "f6710374-8457-4a3f-be45-48eaf22323d5",
+                    "props": {
+                        "style": {
+                            "display": "flex",
+                            "position": "absolute",
+                            "top": "0.43177vw",
+                            "right": "0.21146vw",
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "width": "0.57656vw",
+                            "height": "0.17135vw"
+                        },
+                        "className": "layerWrapper"
+                    },
+                    "rect": {
+                        "x": 407,
+                        "y": 829,
+                        "width": 1107,
+                        "height": 329
+                    },
+                    "children": [
+                        {
+                            "componentName": "Image",
+                            "id": "468c6fa3-21c7-11ec-8cd6-b3025f969e9d",
+                            "props": {
+                                "style": {
+                                    "position": "absolute",
+                                    "top": "0.00000vw",
+                                    "left": "0.00000vw",
+                                    "width": "0.57656vw",
+                                    "height": "0.17135vw"
+                                },
+                                "src": "img23",
+                                "className": "layer"
+                            },
+                            "rect": {
+                                "x": 407,
+                                "y": 829,
+                                "width": 1107,
+                                "height": 329
+                            },
+                            "classNames": [
+                                {
+                                    "name": "万圣节大游行pc",
+                                    "id": "3231_70"
+                                },
+                                {
+                                    "name": "body",
+                                    "id": "3231_59"
+                                },
+                                {
+                                    "name": "part1",
+                                    "id": "3231_53"
+                                },
+                                {
+                                    "name": "首笔优惠",
+                                    "id": "3231_52"
+                                }
+                            ],
+                            "selfId": "layerId-41"
+                        },
+                        {
+                            "componentName": "Image",
+                            "id": "468c6fa2-21c7-11ec-8cd6-b3025f969e9d",
+                            "props": {
+                                "style": {
+                                    "position": "absolute",
+                                    "top": "0.09896vw",
+                                    "right": "0.04531vw",
+                                    "width": "0.19271vw",
+                                    "height": "0.01563vw"
+                                },
+                                "src": "img24",
+                                "className": "background2"
+                            },
+                            "rect": {
+                                "x": 1057,
+                                "y": 1019,
+                                "width": 370,
+                                "height": 30
+                            },
+                            "classNames": [
+                                {
+                                    "name": "万圣节大游行pc",
+                                    "id": "3231_70"
+                                },
+                                {
+                                    "name": "body",
+                                    "id": "3231_59"
+                                },
+                                {
+                                    "name": "part1",
+                                    "id": "3231_53"
+                                },
+                                {
+                                    "name": "首笔优惠",
+                                    "id": "3231_52"
+                                },
+                                {
+                                    "name": "right",
+                                    "id": "3231_46"
+                                }
+                            ],
+                            "selfId": "layerId-43"
+                        },
+                        {
+                            "componentName": "Image",
+                            "id": "468c6fa1-21c7-11ec-8cd6-b3025f969e9d",
+                            "props": {
+                                "style": {
+                                    "position": "absolute",
+                                    "top": "0.08177vw",
+                                    "right": "0.07187vw",
+                                    "width": "0.14010vw",
+                                    "height": "0.00990vw"
+                                },
+                                "src": "img25",
+                                "className": "bg3"
+                            },
+                            "rect": {
+                                "x": 1107,
+                                "y": 986,
+                                "width": 269,
+                                "height": 19
+                            },
+                            "classNames": [
+                                {
+                                    "name": "万圣节大游行pc",
+                                    "id": "3231_70"
+                                },
+                                {
+                                    "name": "body",
+                                    "id": "3231_59"
+                                },
+                                {
+                                    "name": "part1",
+                                    "id": "3231_53"
+                                },
+                                {
+                                    "name": "首笔优惠",
+                                    "id": "3231_52"
+                                },
+                                {
+                                    "name": "right",
+                                    "id": "3231_46"
+                                }
+                            ],
+                            "selfId": "layerId-44"
+                        },
+                        {
+                            "componentName": "Image",
+                            "id": "468c6fa0-21c7-11ec-8cd6-b3025f969e9d",
+                            "props": {
+                                "style": {
+                                    "position": "absolute",
+                                    "top": "0.05469vw",
+                                    "right": "0.09323vw",
+                                    "width": "0.08438vw",
+                                    "height": "0.01146vw"
+                                },
+                                "src": "img26",
+                                "className": "background3"
+                            },
+                            "rect": {
+                                "x": 1173,
+                                "y": 934,
+                                "width": 162,
+                                "height": 22
+                            },
+                            "classNames": [
+                                {
+                                    "name": "万圣节大游行pc",
+                                    "id": "3231_70"
+                                },
+                                {
+                                    "name": "body",
+                                    "id": "3231_59"
+                                },
+                                {
+                                    "name": "part1",
+                                    "id": "3231_53"
+                                },
+                                {
+                                    "name": "首笔优惠",
+                                    "id": "3231_52"
+                                },
+                                {
+                                    "name": "right",
+                                    "id": "3231_46"
+                                }
+                            ],
+                            "selfId": "layerId-45"
+                        },
+                        {
+                            "componentName": "Image",
+                            "id": "468bd360-21c7-11ec-8cd6-b3025f969e9d",
+                            "props": {
+                                "style": {
+                                    "position": "absolute",
+                                    "bottom": "0.01615vw",
+                                    "left": "0.16823vw",
+                                    "width": "0.14792vw",
+                                    "height": "0.13229vw"
+                                },
+                                "src": "img27",
+                                "className": "product"
+                            },
+                            "rect": {
+                                "x": 730,
+                                "y": 873,
+                                "width": 284,
+                                "height": 254
+                            },
+                            "classNames": [
+                                {
+                                    "name": "万圣节大游行pc",
+                                    "id": "3231_70"
+                                },
+                                {
+                                    "name": "body",
+                                    "id": "3231_59"
+                                },
+                                {
+                                    "name": "part1",
+                                    "id": "3231_53"
+                                },
+                                {
+                                    "name": "首笔优惠",
+                                    "id": "3231_52"
+                                },
+                                {
+                                    "name": "left",
+                                    "id": "3231_51"
+                                }
+                            ],
+                            "selfId": "layerId-48"
+                        },
+                        {
+                            "componentName": "Image",
+                            "id": "468bac53-21c7-11ec-8cd6-b3025f969e9d",
+                            "props": {
+                                "style": {
+                                    "position": "absolute",
+                                    "top": "0.08021vw",
+                                    "left": "0.15677vw",
+                                    "width": "0.01094vw",
+                                    "height": "0.01146vw"
+                                },
+                                "src": "img28",
+                                "className": "iconAdd"
+                            },
+                            "rect": {
+                                "x": 708,
+                                "y": 983,
+                                "width": 21,
+                                "height": 22
+                            },
+                            "classNames": [
+                                {
+                                    "name": "万圣节大游行pc",
+                                    "id": "3231_70"
+                                },
+                                {
+                                    "name": "body",
+                                    "id": "3231_59"
+                                },
+                                {
+                                    "name": "part1",
+                                    "id": "3231_53"
+                                },
+                                {
+                                    "name": "首笔优惠",
+                                    "id": "3231_52"
+                                },
+                                {
+                                    "name": "left",
+                                    "id": "3231_51"
+                                }
+                            ],
+                            "selfId": "layerId-49",
+                            "smart": {
+                                "layerProtocol": {
+                                    "field": {
+                                        "type": "add"
+                                    }
+                                },
+                                "nodeIdentification": {
+                                    "fieldBind": [
+                                        "add"
+                                    ]
+                                },
+                                "nodeCustom": {
+                                    "fieldBind": {
+                                        "confidential": 0.9994264841079712,
+                                        "isConfident": true,
+                                        "label": "add",
+                                        "type": "fieldBind"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "componentName": "Image",
+                            "id": "468bac52-21c7-11ec-8cd6-b3025f969e9d",
+                            "props": {
+                                "style": {
+                                    "position": "absolute",
+                                    "bottom": "0.01615vw",
+                                    "left": "0.00833vw",
+                                    "width": "0.14792vw",
+                                    "height": "0.13229vw"
+                                },
+                                "src": "img29",
+                                "className": "item1"
+                            },
+                            "rect": {
+                                "x": 423,
+                                "y": 873,
+                                "width": 284,
+                                "height": 254
+                            },
+                            "classNames": [
+                                {
+                                    "name": "万圣节大游行pc",
+                                    "id": "3231_70"
+                                },
+                                {
+                                    "name": "body",
+                                    "id": "3231_59"
+                                },
+                                {
+                                    "name": "part1",
+                                    "id": "3231_53"
+                                },
+                                {
+                                    "name": "首笔优惠",
+                                    "id": "3231_52"
+                                },
+                                {
+                                    "name": "left",
+                                    "id": "3231_51"
+                                }
+                            ],
+                            "selfId": "layerId-50"
+                        }
+                    ]
+                },
+                {
+                    "componentName": "Image",
+                    "id": "468bac51-21c7-11ec-8cd6-b3025f969e9d",
+                    "props": {
+                        "style": {
+                            "position": "absolute",
+                            "top": "0.00000vw",
+                            "left": "0.00000vw",
+                            "width": "1.00000vw",
+                            "height": "0.76146vw"
+                        },
+                        "src": "img30",
+                        "className": "cover1"
+                    },
+                    "rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 1920,
+                        "height": 1462
+                    },
+                    "classNames": [
+                        {
+                            "name": "万圣节大游行pc",
+                            "id": "3231_70"
+                        }
+                    ],
+                    "selfId": "layerId-60"
+                }
+            ]
+        }
+    ],
+    "imgcook": {
+        "restore_id": "ddbbfaf8-b36d-4010-b32f-f4256e77748d"
+    },
+    "imports": [
+        {
+            "name": "img0",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/300cda8021c711ec8e7d0dac20d72755.png"
+        },
+        {
+            "name": "img1",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/307f998021c711ecbd224f579ef19aa8.png"
+        },
+        {
+            "name": "img2",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/30ad122021c711eca4909541617492c8.png"
+        },
+        {
+            "name": "img3",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/30f84bf021c711ec8e7d0dac20d72755.png"
+        },
+        {
+            "name": "img4",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/335c2c9021c711ecb0c73fe9fe75da97.png"
+        },
+        {
+            "name": "img5",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/36e9720021c711ecb974edc5b199b475.png"
+        },
+        {
+            "name": "img6",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/3781e17021c711ecb0c73fe9fe75da97.png"
+        },
+        {
+            "name": "img7",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/3838392021c711ecb0c73fe9fe75da97.png"
+        },
+        {
+            "name": "img8",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/37fe647021c711eca78d0907794f3ea9.png"
+        },
+        {
+            "name": "img9",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/37d7f0b021c711ec8fb1573d2b0c245d.png"
+        },
+        {
+            "name": "img10",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/37a4368021c711ec908525a2b2d5a2e9.png"
+        },
+        {
+            "name": "img11",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/3484f52021c711ecb974edc5b199b475.png"
+        },
+        {
+            "name": "img12",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/353f447021c711ecb0c73fe9fe75da97.png"
+        },
+        {
+            "name": "img13",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/363675b021c711ec82a035c2fc5428cb.png"
+        },
+        {
+            "name": "img14",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/35fdb27021c711ecb9a84d1032b79016.png"
+        },
+        {
+            "name": "img15",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/35d542e021c711ec8fb1573d2b0c245d.png"
+        },
+        {
+            "name": "img16",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/35a691c021c711ecbd224f579ef19aa8.png"
+        },
+        {
+            "name": "img17",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/356bf9c021c711ec8eb2a5008967f062.png"
+        },
+        {
+            "name": "img18",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/350521a021c711eca78d0907794f3ea9.png"
+        },
+        {
+            "name": "img19",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/34cb9b1021c711ec908525a2b2d5a2e9.png"
+        },
+        {
+            "name": "img20",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/33cffd0021c711ec8fb1573d2b0c245d.png"
+        },
+        {
+            "name": "img21",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/37432ac021c711ec8514fdd285ce2e11.png"
+        },
+        {
+            "name": "img22",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/386b08f021c711ecb9a84d1032b79016.png"
+        },
+        {
+            "name": "img23",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/38b04f5021c711ecb974edc5b199b475.png"
+        },
+        {
+            "name": "img24",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/38d9d05021c711eca4909541617492c8.png"
+        },
+        {
+            "name": "img25",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/3905c25021c711ecaba163cb66251cf6.png"
+        },
+        {
+            "name": "img26",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/39370b8021c711ecb84a8bb4c9fb1a35.png"
+        },
+        {
+            "name": "img27",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/39759b2021c711ec8eb2a5008967f062.png"
+        },
+        {
+            "name": "img28",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/39a6e45021c711ecb0c73fe9fe75da97.png"
+        },
+        {
+            "name": "img29",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/39d6f50021c711ec82a035c2fc5428cb.png"
+        },
+        {
+            "name": "img30",
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/3eb7475021c711eca78d0907794f3ea9.png"
+        }
+    ],
+    "styles": {
+        "mod": {
+            "width": "1.00000vw",
+            "height": "1.87760vw"
+        },
+        "containerInner": {
+            "display": "flex",
+            "position": "relative",
+            "alignItems": "center",
+            "flexDirection": "row",
+            "backgroundColor": "#ffffff",
+            "width": "1.00000vw",
+            "height": "1.87760vw"
+        },
+        "banner": {
+            "position": "absolute",
+            "top": "0.00000vw",
+            "left": "0.00000vw",
+            "width": "1.00000vw",
+            "height": "0.52187vw"
+        },
+        "floorBgWrapper": {
+            "display": "flex",
+            "position": "absolute",
+            "bottom": "0.00000vw",
+            "left": "0.00000vw",
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "backgroundSize": "contain",
+            "backgroundImage": "`url(${img2})`",
+            "width": "1.00000vw",
+            "height": "0.20156vw"
+        },
+        "floorBg": {
+            "marginTop": "0.04219vw",
+            "width": "0.45677vw",
+            "height": "0.10885vw"
+        },
+        "wrapper": {
+            "display": "flex",
+            "position": "absolute",
+            "bottom": "0.09010vw",
+            "left": "0.00000vw",
+            "alignItems": "center",
+            "flexDirection": "column",
+            "backgroundSize": "contain",
+            "backgroundImage": "`url(${img4})`",
+            "width": "1.00000vw",
+            "height": "1.44115vw"
+        },
+        "wrapperInner": {
+            "display": "flex",
+            "position": "relative",
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginTop": "0.02604vw"
+        },
+        "cover": {
+            "position": "relative",
+            "width": "0.69635vw",
+            "height": "0.61667vw"
+        },
+        "group": {
+            "display": "flex",
+            "position": "absolute",
+            "top": "0.33698vw",
+            "right": "0.06302vw",
+            "alignItems": "center",
+            "flexDirection": "column",
+            "backgroundSize": "contain",
+            "backgroundImage": "`url(${img6})`",
+            "width": "0.56771vw",
+            "height": "0.20469vw"
+        },
+        "longBg": {
+            "position": "relative",
+            "marginTop": "0.01667vw",
+            "width": "0.54375vw",
+            "height": "0.08073vw"
+        },
+        "bg": {
+            "position": "relative",
+            "marginTop": "0.01458vw",
+            "width": "0.09427vw",
+            "height": "0.01146vw"
+        },
+        "background": {
+            "position": "relative",
+            "marginTop": "0.01042vw",
+            "width": "0.25781vw",
+            "height": "0.03490vw"
+        },
+        "bg1": {
+            "position": "relative",
+            "marginTop": "0.00990vw",
+            "width": "0.11146vw",
+            "height": "0.01406vw"
+        },
+        "wrapperInner1": {
+            "display": "flex",
+            "position": "relative",
+            "alignItems": "center",
+            "flexDirection": "column",
+            "marginTop": "0.00729vw",
+            "backgroundSize": "contain",
+            "backgroundImage": "`url(${img11})`",
+            "width": "0.69635vw",
+            "height": "0.46042vw"
+        },
+        "group1": {
+            "display": "flex",
+            "position": "relative",
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "marginTop": "0.06198vw",
+            "backgroundSize": "contain",
+            "backgroundImage": "`url(${img12})`",
+            "width": "0.59323vw",
+            "height": "0.19115vw"
+        },
+        "view": {
+            "display": "flex",
+            "alignItems": "flex-start",
+            "flexDirection": "column",
+            "marginTop": "0.01510vw",
+            "marginRight": "0.06354vw",
+            "marginLeft": "0.02187vw"
+        },
+        "actionBg": {
+            "position": "relative",
+            "marginLeft": "0.00052vw",
+            "width": "0.23125vw",
+            "height": "0.07500vw"
+        },
+        "buttonBg": {
+            "position": "relative",
+            "marginTop": "0.00729vw",
+            "width": "0.23125vw",
+            "height": "0.07500vw"
+        },
+        "view1": {
+            "display": "flex",
+            "alignItems": "flex-start",
+            "flexDirection": "column",
+            "marginTop": "0.04844vw",
+            "width": "0.23125vw"
+        },
+        "background1": {
+            "position": "relative",
+            "marginLeft": "0.08177vw",
+            "width": "0.08542vw",
+            "height": "0.01094vw"
+        },
+        "actionBg1": {
+            "position": "relative",
+            "alignSelf": "center",
+            "marginTop": "0.01771vw",
+            "width": "0.19323vw",
+            "height": "0.03490vw"
+        },
+        "bg2": {
+            "position": "relative",
+            "marginTop": "0.01302vw",
+            "width": "0.23125vw",
+            "height": "0.02656vw"
+        },
+        "item": {
+            "position": "relative",
+            "marginTop": "0.01667vw",
+            "width": "0.10260vw",
+            "height": "0.10260vw"
+        },
+        "buttonBg1": {
+            "position": "relative",
+            "marginTop": "0.01563vw",
+            "width": "0.08802vw",
+            "height": "0.01927vw"
+        },
+        "banner1": {
+            "position": "relative",
+            "marginTop": "0.01250vw",
+            "width": "0.45937vw",
+            "height": "0.15052vw"
+        },
+        "bar": {
+            "position": "absolute",
+            "top": "0.70052vw",
+            "left": "0.20417vw",
+            "width": "0.59115vw",
+            "height": "0.02604vw"
+        },
+        "actionBg2": {
+            "position": "absolute",
+            "top": "0.63281vw",
+            "right": "0.38646vw",
+            "width": "0.22448vw",
+            "height": "0.04375vw"
+        },
+        "layerWrapper": {
+            "display": "flex",
+            "position": "absolute",
+            "top": "0.43177vw",
+            "right": "0.21146vw",
+            "alignItems": "center",
+            "flexDirection": "row",
+            "width": "0.57656vw",
+            "height": "0.17135vw"
+        },
+        "layer": {
+            "position": "absolute",
+            "top": "0.00000vw",
+            "left": "0.00000vw",
+            "width": "0.57656vw",
+            "height": "0.17135vw"
+        },
+        "background2": {
+            "position": "absolute",
+            "top": "0.09896vw",
+            "right": "0.04531vw",
+            "width": "0.19271vw",
+            "height": "0.01563vw"
+        },
+        "bg3": {
+            "position": "absolute",
+            "top": "0.08177vw",
+            "right": "0.07187vw",
+            "width": "0.14010vw",
+            "height": "0.00990vw"
+        },
+        "background3": {
+            "position": "absolute",
+            "top": "0.05469vw",
+            "right": "0.09323vw",
+            "width": "0.08438vw",
+            "height": "0.01146vw"
+        },
+        "product": {
+            "position": "absolute",
+            "bottom": "0.01615vw",
+            "left": "0.16823vw",
+            "width": "0.14792vw",
+            "height": "0.13229vw"
+        },
+        "iconAdd": {
+            "position": "absolute",
+            "top": "0.08021vw",
+            "left": "0.15677vw",
+            "width": "0.01094vw",
+            "height": "0.01146vw"
+        },
+        "item1": {
+            "position": "absolute",
+            "bottom": "0.01615vw",
+            "left": "0.00833vw",
+            "width": "0.14792vw",
+            "height": "0.13229vw"
+        },
+        "cover1": {
+            "position": "absolute",
+            "top": "0.00000vw",
+            "left": "0.00000vw",
+            "width": "1.00000vw",
+            "height": "0.76146vw"
+        }
+    }
+}

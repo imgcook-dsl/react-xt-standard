@@ -14,7 +14,8 @@
   },
   "scripts": {
     "test": "node ./test/index.js",
-    "create-halloween": "node ./scripts/create.js --activity=halloween --scene=pc"
+    "create-halloween": "node ./scripts/create.js --activity=halloween --scene=pc",
+    "create-crm-fission": "node ./scripts/create.js --activity=crmFission --scene=mobile"
   },
   "dependencies": {
     "chalk": "^4.1.2",
