@@ -449,8 +449,6 @@ module.exports = function(schema, option) {
       return `import img${index+1} from '${path.join(projectPath, fileName)}'`
     })
   }
-  
-  console.log(classes)
   return {
     panelDisplay: [
       {
