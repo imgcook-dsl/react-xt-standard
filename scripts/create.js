@@ -1,38 +1,41 @@
-// const indexTemplate = require('../templates/page.index.template')
-// const pcTemplate = require('../templates/page.index.template')
-const fs = require('fs');
+const fs = require("fs/promises");
 const path = require('path');
-<<<<<<< HEAD
-const parse = require('../src/old_index.js');
-=======
-const parse = require('../src/index');
->>>>>>> d543d68c8c1fbab9143864f416ce04b394889fe2
-const data = require('../test/data');
+
 const download = require('../download')
 const config = require('../config')
 const chalk = require('chalk')
 
-const targetPath = config.targetPath
-const options = config.options
+const node = require('../test/data')
+const prettier = require('prettier');
 
-const files = parse(data, options)
+const traverse = require('../src/traverse')
+const generate = require('../src/generate')
+const { visitors0, visitors1 } = require('../src/visitors')
 
-console.log(chalk.red('如果要下载图片到文件，把download注释打开'))
-console.log(chalk.green('生成代码宽度', options.responsive.width))
-console.log(chalk.green('图片生成路径', targetPath))
+const prettierOpt = {
+  parser: 'babel',
+  printWidth: 120,
+  singleQuote: true
+};
 
-files.panelDisplay.forEach((file) => {
-  const downloadFiles = Array.isArray(file.panelResources.imports) ? file.panelResources.imports.map((imp, index) => {
-    const regex = /\'.+\'/
-    const url = imp.match(regex)[0].slice(1,-1)
-    const arr = url.split('/')
-    const fileName = arr[arr.length-1]
-    return {
-      fileName,
-      url,
-    }
-  }) : undefined
-  downloadFiles && download(downloadFiles, targetPath)
+const cssPrettierOpt = {
+  parser: 'css',
+  printWidth: 100,
+};
+traverse(node, visitors0);
+console.log(config.targetPath, 123)
+node.imports.forEach(({name, src}) => download(
+  src,
+  config.targetPath, // 项目图片路径
+  // path.resolve(__dirname, '../assets'), // 本地测试路径
+  `${name}.png`
+))
 
-  fs.writeFileSync(path.join(__dirname, `../code/${file.panelName}`), file.panelValue);
-})
+traverse(node, visitors1);
+
+fs.writeFile(path.resolve(__dirname, './target.json'), JSON.stringify(node, null, 4))
+
+const { code, styles } = generate(node)
+
+fs.writeFile(path.resolve(__dirname, './code.js'), prettier.format(code, prettierOpt))
+// fs.writeFile(path.resolve(__dirname, './style.css'), prettier.format(styles, cssPrettierOpt))

@@ -1,0 +1,409 @@
+{
+    "componentName": "Page",
+    "id": "6098bcf0-7906-11ec-8db5-d519d898c09e",
+    "props": {
+        "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "width": "100.00000vw",
+            "height": "590.26667vw",
+            "position": "relative",
+            "backgroundColor": "#f7f7f7"
+        },
+        "className": "page"
+    },
+    "artboardImg": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/57f34c50790611ec8c17a7f58d2097cc.png",
+    "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 750,
+        "height": 4427
+    },
+    "pluginVersion": "1.1.3",
+    "smart": {
+        "layerProtocol": {
+            "custom-layout": {
+                "type": "skip"
+            }
+        }
+    },
+    "name": "CRM微信分享落地页",
+    "reference": "psd",
+    "restore_id": "fc296dba-67bb-4a18-9f0d-f49c1bb77226",
+    "children": [
+        {
+            "componentName": "Block",
+            "id": "a801d27c-dbb1-4f2d-9723-6bf436090f0b",
+            "props": {
+                "style": {
+                    "display": "flex",
+                    "position": "absolute",
+                    "top": "0.00000vw",
+                    "alignItems": "flex-start",
+                    "alignSelf": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "center"
+                },
+                "className": "bannerWrapper"
+            },
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 750,
+                "height": 637
+            },
+            "smart": {
+                "layerProtocol": {
+                    "field": {
+                        "type": "banner"
+                    },
+                    "module": {
+                        "type": "smartModule"
+                    }
+                },
+                "nodeIdentification": {
+                    "fieldBind": [
+                        "banner"
+                    ]
+                },
+                "nodeCustom": {
+                    "fieldBind": {
+                        "confidential": 0.8448731899261475,
+                        "isConfident": true,
+                        "label": "banner",
+                        "type": "fieldBind"
+                    }
+                }
+            },
+            "children": [
+                {
+                    "componentName": "Image",
+                    "id": "6098bcf2-7906-11ec-8db5-d519d898c09e",
+                    "props": {
+                        "style": {
+                            "width": "100.00000vw",
+                            "height": "84.93333vw"
+                        },
+                        "src": "img0",
+                        "className": "banner"
+                    },
+                    "rect": {
+                        "x": 0,
+                        "y": 0,
+                        "width": 750,
+                        "height": 637
+                    },
+                    "classNames": [
+                        {
+                            "name": "CRM微信分享落地页",
+                            "id": "610_16"
+                        }
+                    ],
+                    "selfId": "layerId-14",
+                    "smart": {
+                        "layerProtocol": {
+                            "field": {
+                                "type": "banner"
+                            }
+                        },
+                        "nodeIdentification": {
+                            "fieldBind": [
+                                "banner"
+                            ]
+                        },
+                        "nodeCustom": {
+                            "fieldBind": {
+                                "confidential": 0.8448731899261475,
+                                "isConfident": true,
+                                "label": "banner",
+                                "type": "fieldBind"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "componentName": "Block",
+            "id": "f4489166-fd69-4fc1-a44e-2c75c93f3603",
+            "props": {
+                "style": {
+                    "display": "flex",
+                    "position": "relative",
+                    "alignItems": "flex-start",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "marginTop": "73.86667vw"
+                },
+                "className": "longBannerWrapper"
+            },
+            "rect": {
+                "x": 18,
+                "y": 554,
+                "width": 714,
+                "height": 1812
+            },
+            "fileName": "mod_0",
+            "children": [
+                {
+                    "componentName": "Image",
+                    "id": "6098bcf1-7906-11ec-8db5-d519d898c09e",
+                    "props": {
+                        "style": {
+                            "width": "95.20000vw",
+                            "height": "241.60000vw"
+                        },
+                        "src": "img1",
+                        "className": "longBanner"
+                    },
+                    "rect": {
+                        "x": 18,
+                        "y": 554,
+                        "width": 714,
+                        "height": 1812
+                    },
+                    "classNames": [
+                        {
+                            "name": "CRM微信分享落地页",
+                            "id": "610_16"
+                        }
+                    ],
+                    "selfId": "layerId-15"
+                }
+            ],
+            "smart": {
+                "layerProtocol": {
+                    "module": {
+                        "type": "smartModule"
+                    }
+                }
+            }
+        },
+        {
+            "componentName": "Block",
+            "id": "4c57c48c-f1e7-4f99-8eb9-958428e77ef4",
+            "props": {
+                "style": {
+                    "display": "flex",
+                    "position": "relative",
+                    "alignItems": "flex-start",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "marginTop": "3.06667vw"
+                },
+                "className": "longCoverWrapper"
+            },
+            "rect": {
+                "x": 18,
+                "y": 2389,
+                "width": 706,
+                "height": 1153
+            },
+            "fileName": "mod_1",
+            "children": [
+                {
+                    "componentName": "Image",
+                    "id": "6098bcf3-7906-11ec-8db5-d519d898c09e",
+                    "props": {
+                        "style": {
+                            "width": "94.13333vw",
+                            "height": "153.73333vw"
+                        },
+                        "src": "img2",
+                        "className": "longCover"
+                    },
+                    "rect": {
+                        "x": 18,
+                        "y": 2389,
+                        "width": 706,
+                        "height": 1153
+                    },
+                    "classNames": [
+                        {
+                            "name": "CRM微信分享落地页",
+                            "id": "610_16"
+                        }
+                    ],
+                    "selfId": "layerId-13"
+                }
+            ],
+            "smart": {
+                "layerProtocol": {
+                    "module": {
+                        "type": "smartModule"
+                    }
+                }
+            }
+        },
+        {
+            "componentName": "Block",
+            "id": "2d94e19e-24ca-47d5-887e-dab59476d382",
+            "props": {
+                "style": {
+                    "display": "flex",
+                    "position": "relative",
+                    "alignItems": "flex-start",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "marginTop": "7.60000vw"
+                },
+                "className": "coverWrapper"
+            },
+            "rect": {
+                "x": 26,
+                "y": 3599,
+                "width": 697,
+                "height": 592
+            },
+            "fileName": "mod_2",
+            "children": [
+                {
+                    "componentName": "Image",
+                    "id": "6098bcf4-7906-11ec-8db5-d519d898c09e",
+                    "props": {
+                        "style": {
+                            "width": "92.93333vw",
+                            "height": "78.93333vw"
+                        },
+                        "src": "img3",
+                        "className": "cover"
+                    },
+                    "rect": {
+                        "x": 26,
+                        "y": 3599,
+                        "width": 697,
+                        "height": 592
+                    },
+                    "classNames": [
+                        {
+                            "name": "CRM微信分享落地页",
+                            "id": "610_16"
+                        }
+                    ],
+                    "selfId": "layerId-12",
+                    "smart": {
+                        "layerProtocol": {
+                            "field": {
+                                "type": "webPicture"
+                            }
+                        },
+                        "nodeIdentification": {
+                            "fieldBind": [
+                                "webPicture"
+                            ]
+                        },
+                        "nodeCustom": {
+                            "fieldBind": {
+                                "confidential": 0.9440264701843262,
+                                "isConfident": true,
+                                "label": "webPicture",
+                                "type": "fieldBind"
+                            }
+                        }
+                    }
+                }
+            ],
+            "smart": {
+                "layerProtocol": {
+                    "module": {
+                        "type": "smartModule"
+                    }
+                }
+            }
+        }
+    ],
+    "imgcook": {
+        "restore_id": "fc296dba-67bb-4a18-9f0d-f49c1bb77226",
+        "dslConfig": {
+            "cssUnit": "px",
+            "dsl": "react-standard",
+            "dslName": "React",
+            "componentStyle": "hooks",
+            "cssStyle": "camelCase",
+            "cssType": "css",
+            "inlineStyle": "module",
+            "globalCss": false,
+            "jsx": "javascript",
+            "outputStyle": "component"
+        }
+    },
+    "imports": [
+        {
+            "name": "img0",
+            "src": "resources/images/activities/crmFission/mobile/img0.png"
+        },
+        {
+            "name": "img1",
+            "src": "resources/images/activities/crmFission/mobile/img1.png"
+        },
+        {
+            "name": "img2",
+            "src": "resources/images/activities/crmFission/mobile/img2.png"
+        },
+        {
+            "name": "img3",
+            "src": "resources/images/activities/crmFission/mobile/img3.png"
+        }
+    ],
+    "styles": {
+        "page": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "width": "100.00000vw",
+            "height": "590.26667vw",
+            "position": "relative",
+            "backgroundColor": "#f7f7f7"
+        },
+        "bannerWrapper": {
+            "display": "flex",
+            "position": "absolute",
+            "top": "0.00000vw",
+            "alignItems": "flex-start",
+            "alignSelf": "center",
+            "flexDirection": "row",
+            "justifyContent": "center"
+        },
+        "banner": {
+            "width": "100.00000vw",
+            "height": "84.93333vw"
+        },
+        "longBannerWrapper": {
+            "display": "flex",
+            "position": "relative",
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginTop": "73.86667vw"
+        },
+        "longBanner": {
+            "width": "95.20000vw",
+            "height": "241.60000vw"
+        },
+        "longCoverWrapper": {
+            "display": "flex",
+            "position": "relative",
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginTop": "3.06667vw"
+        },
+        "longCover": {
+            "width": "94.13333vw",
+            "height": "153.73333vw"
+        },
+        "coverWrapper": {
+            "display": "flex",
+            "position": "relative",
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginTop": "7.60000vw"
+        },
+        "cover": {
+            "width": "92.93333vw",
+            "height": "78.93333vw"
+        }
+    }
+}

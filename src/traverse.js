@@ -37,6 +37,9 @@ const astDefinationsMap = new Map();
 astDefinationsMap.set('Block', {
     visitor: ['children']
 });
+astDefinationsMap.set('Page', {
+  visitor: ['children']
+});
 astDefinationsMap.set('Div', {
     visitor: ['children']
 });

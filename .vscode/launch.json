@@ -5,14 +5,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "runtimeExecutable": "/Users/zhoushuhang/.nvm/versions/node/v14.18.1/bin/node",
       "type": "pwa-node",
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/src/index.js"
+      "runtimeExecutable": "/Users/zhoushuhang/.nvm/versions/node/v14.18.1/bin/node",
+      "program": "${workspaceFolder}/scripts/create.js"
     }
   ]
 }

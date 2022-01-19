@@ -1,3 +1,5 @@
+const config = require('../config')
+
 const formatClassName = (className) => {
   const formatClassName = className
     .split('')
@@ -20,11 +22,11 @@ function styleVisitor(path, state) {
       const value = style[key]
       const src = value.match(/\(.*\)/)[0].slice(1,-1)
       style[key] = `\`url(\${img${state.imports.length}})\``
+      console.log(src)
       state.imports.push(src)
     }
     if(/px/.test(style[key])){
-      style[key]= Number(style[key].slice(0, -2)/state.rootWidth).toFixed(5) + 'vw'
-      console.log(style[key])
+      style[key]= Number(style[key].slice(0, -2)*100/state.rootWidth).toFixed(5) + 'vw'
     }
   })
 
@@ -34,36 +36,54 @@ function styleVisitor(path, state) {
 }
 
 function importVisitor(path, state) {
-  const src = path.node.artboardImg || path.node.props.src
-  path.node.props.src = `img${state.imports.length}`
-  state.imports.push(src)
+  const src = path.node.props.src
+  if(src) {
+    path.node.props.src = `img${state.imports.length}`
+    state.imports.push(src)
+  }
 }
 
-const visitors = {
-    Block(path, state) {
-      state.imports = []
-      state.styles = {}
-      state.rootWidth = path.node.rect.width
+const visitors0 = {
+  Page(path, state) {
+    state.imports = []
+    state.styles = {}
+    state.rootWidth = path.node.rect.width
 
-      importVisitor(path, state)
-      styleVisitor(path, state)
+    importVisitor(path, state)
+    styleVisitor(path, state)
 
-      path.traverse({
-        Image(path) {
-          importVisitor(path, state)
-          styleVisitor(path, state)
-        },
-        Div(path) {
-          styleVisitor(path, state)
-        },
-      })
+    path.traverse({
+      Image(path) {
+        importVisitor(path, state)
+        styleVisitor(path, state)
+      },
+      Block(path) {
+        styleVisitor(path, state)
+      },
+      Div(path) {
+        styleVisitor(path, state)
+      },
+    })
 
-      path.node.imports = state.imports.map((src, index) => ({
-        name: `img${index}`,
-        src,
-      }))
-      path.node.styles = state.styles
-    },
+    path.node.imports = state.imports.map((src, index) => ({
+      name: `img${index}`,
+      src,
+    }))
+    path.node.styles = state.styles
+  },
 }
 
-module.exports = visitors
+const visitors1 = {
+  Page(path) {
+    path.node.imports.forEach((imp) => {
+      imp.src = `${config.relativePath}${imp.name}.png`
+    })
+    // path.node.props.style.backgroundImage = `\`url(\${img0})\``
+    // console.log(path.node.props.style)
+  },
+}
+
+module.exports = { 
+  visitors0,
+  visitors1,
+}

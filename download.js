@@ -16,8 +16,4 @@ const download = (url, targetPath, fileName) => {
   });
 }
 
-module.exports = (files, targetPath) => {
-  files.forEach((file) => {
-    download(file.url, targetPath, file.fileName, )
-  })
-}
+module.exports = download

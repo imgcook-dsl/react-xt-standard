@@ -1,4 +1,8 @@
 const tagTypeMap = {
+  Page: {
+    react: 'div',
+    'react-native': 'View'
+  },
   Block: {
     react: 'div',
     'react-native': 'View'
@@ -110,7 +114,8 @@ class Printer {
     this.printTag(node)
   }
 
-  Block (node) { // 根元素
+  Page (node) { // 根元素
+    this.print("import React from 'react'\n")
     this.printImports(node)
     this.nextLine()
     this.print('const Index = () => {')
@@ -125,7 +130,10 @@ class Printer {
     this.nextLine()
     this.print('export default Index')
 
-    this.printStyles(node)
+    this.printStyles(node)  }
+
+  Block (node) { // 根元素
+    this.printTag(node)
   }
 }
 
@@ -145,7 +153,7 @@ class Generator extends Printer{
   }
 }
 
-function generate (node, type = 'react-native', options = {}) {
+function generate (node, type = 'react', options = {}) {
   return new Generator(type).generate(node)
 }
 
